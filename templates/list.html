@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+   <body>
+
+      <table border = 1>
+         <thead>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Username</td>
+            <td>Email</td>
+            <td>Password</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["firstname"]}}</td>
+               <td>{{row["lastname"]}}</td>
+               <td> {{row["username"]}}</td>
+               <td>{{row["email"]}}</td>
+               <td>{{row["password"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+
+
+   </body>
+</html>
